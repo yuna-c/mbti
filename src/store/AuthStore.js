@@ -1,8 +1,9 @@
 import { create } from 'zustand';
 
 const useAuthStore = create((set) => ({
-  accessToken: null,
-  nickname: null,
+  // 초기값을 localStorage에서 가져옴
+  accessToken: localStorage.getItem('accessToken') || null,
+  nickname: localStorage.getItem('nickname') || null,
   userId: null,
 
   // 사용자 정보를 저장하는 함수
