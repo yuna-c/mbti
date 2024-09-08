@@ -3,7 +3,7 @@ import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Signup from '../pages/Signup';
 import Profile from '../pages/Profile';
-import TestPage from '../pages/TestPage';
+import TestPage from '../test/TestPage';
 import TestResultPage from '../test/TestResultPage';
 import Layout from '../common/Layout';
 import ProtectedRoute from './ProtectedRoute';
