@@ -13,5 +13,14 @@ export const createTestResult = async (resultData) => {
   return response.data;
 };
 
-// export const deleteTestResult = async (id) => {};
-// export const updateTestResultVisibility = async (id, visibility) => {};
+export const deleteTestResult = async (id) => {
+  const response = await axios.delete(`${API_URL}/${id}`);
+  return response.data;
+};
+
+export const updateTestResultVisibility = async (id, newVisibility) => {
+  const response = await axios.patch(`${API_URL}/${id}`, {
+    visibility: newVisibility // 매개변수 이름 변경
+  });
+  return response.data;
+};

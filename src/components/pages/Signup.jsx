@@ -2,10 +2,11 @@ import { useMutation } from '@tanstack/react-query';
 import { register } from '../../api/auth';
 import useAuthStore from '../../store/AuthStore';
 import AuthForm from '../common/AuthForm';
+import { useNavigate } from 'react-router-dom';
 
 export default function Signup() {
   const setAuth = useAuthStore((state) => state.setAuth);
-
+  const navigate = useNavigate();
   const mutation = useMutation({
     mutationFn: register,
     onSuccess: (data) => {
@@ -13,6 +14,7 @@ export default function Signup() {
       console.log('회원가입 성공:', data); // 응답 데이터 확인
       // const { accessToken, nickname, userId } = data;
       setAuth(data.accessToken, data.nickname, data.userId);
+      navigate('/login');
     },
     onError: (error) => {
       console.error('회원가입 실패:', error.response?.data || error.message);

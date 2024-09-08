@@ -124,6 +124,42 @@
       ],
       "date": "2024-09-08T18:42:11.232Z",
       "visibility": true
+    },
+    {
+      "id": "c17d",
+      "userId": "tester999999",
+      "nickname": "새로고침하면돼?",
+      "result": "INTJ",
+      "answers": [
+        "아니오",
+        "아니오"
+      ],
+      "date": "2024-09-08T19:04:35.676Z",
+      "visibility": true
+    },
+    {
+      "id": "6005",
+      "userId": "tester999999",
+      "nickname": "새로고침하면돼?",
+      "result": "ESTJ",
+      "answers": [
+        "예",
+        "예"
+      ],
+      "date": "2024-09-08T19:05:08.839Z",
+      "visibility": true
+    },
+    {
+      "id": "3ff4",
+      "userId": "dfsdfsdfsdgtrunui",
+      "nickname": "dfsdfsdfsdgtrunui",
+      "result": "INTJ",
+      "answers": [
+        "아니오",
+        "아니오"
+      ],
+      "date": "2024-09-08T19:41:10.641Z",
+      "visibility": true
     }
   ]
 }
