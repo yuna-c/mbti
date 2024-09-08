@@ -15,11 +15,10 @@ export default function Login() {
       const { accessToken, nickname, userId } = data;
       // Test 결과 DB 저장을 위한 userId 저장, 중복 storage.setItem삭제
       setAuth(accessToken, nickname, userId);
-
       navigate('/');
     },
     onError: (error) => {
-      console.error('로그인 실패:', error);
+      console.error('로그인 실패:', error.response?.data || error.message);
     }
   });
 
