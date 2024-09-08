@@ -12,12 +12,9 @@ export default function Login() {
   const mutation = useMutation({
     mutationFn: login,
     onSuccess: (data) => {
-      const { accessToken, nickname } = data;
-
-      // 로컬 스토리지 및 zustand에 상태 저장
-      setAuth(accessToken, nickname);
-      localStorage.setItem('accessToken', accessToken);
-      localStorage.setItem('nickname', nickname);
+      const { accessToken, nickname, userId } = data;
+      // Test 결과 DB 저장을 위한 userId 저장, 중복 storage.setItem삭제
+      setAuth(accessToken, nickname, userId);
 
       navigate('/');
     },

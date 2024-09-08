@@ -7,12 +7,12 @@ import { createTestResult } from '../../api/testResults';
 export default function TestPage() {
   const navigate = useNavigate();
 
+  // userId가 null인 이유는?
   const { userId, nickname } = useAuthStore((state) => ({
     userId: state.userId,
     nickname: state.nickname
   }));
-
-  // console.log(calculateMBTI);
+  // alert(userId);
 
   const onHandleTestSubmit = async (answers) => {
     const result = calculateMBTI(answers);

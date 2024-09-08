@@ -11,7 +11,7 @@ export const questions = [
     options: ['예', '아니오'],
     type: 'S/N'
   }
-  // ,
+  //,
   // {
   //   id: 3,
   //   question: '당신은 결정을 내릴 때 논리적이고 객관적인 기준을 더 중시하나요?',

@@ -10,8 +10,8 @@ export default function Signup() {
   const mutation = useMutation({
     mutationFn: register,
     onSuccess: (data) => {
-      // 성공 시 zustand 상태 업데이트
-      setAuth(data.accessToken, data.nickname, data.userId);
+      const { accessToken, nickname, userId } = data;
+      setAuth(accessToken, nickname, userId);
     },
     onError: (error) => {
       console.error('회원가입 실패:', error);

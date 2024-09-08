@@ -2,8 +2,10 @@ import { useState } from 'react';
 import { questions } from '../../data/querstions';
 
 export default function TestForm({ onSubmit }) {
+  // 선택한 답변을 담을 배열을 초기화
   const [answers, setAnswers] = useState(Array(questions.length).fill(null));
 
+  // 질문에 대한 답변을 선택할 때 호출되는 함수
   const onHandleChange = (index, answer) => {
     const newAnswers = [...answers];
     newAnswers[index] = answer;
