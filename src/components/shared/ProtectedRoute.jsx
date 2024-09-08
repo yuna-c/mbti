@@ -1,8 +1,14 @@
 import { Navigate, Outlet } from 'react-router-dom';
+import useAuthStore from '../../store/AuthStore';
 
 const ProtectedRoute = () => {
-  const isAuth = localStorage.getItem('userToken') !== null;
-  return isAuth ? <Outlet /> : <Navigate to="/login" />;
+  const accessToken = useAuthStore((state) => state.accessToken);
+
+  if (!accessToken) {
+    alert('로그인해야 접근할 수 있습니다.');
+    return <Navigate to="/login" replace />;
+  }
+  return <Outlet />;
 };
 
 export default ProtectedRoute;

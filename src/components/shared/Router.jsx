@@ -7,9 +7,11 @@ import TestPage from '../pages/TestPage';
 import TestResultPage from '../test/TestResultPage';
 import Layout from '../common/Layout';
 import ProtectedRoute from './ProtectedRoute';
+import useAuthStore from '../../store/AuthStore';
 
 const isAuthenticated = () => {
-  return localStorage.getItem('userToken') !== null;
+  const accessToken = useAuthStore((state) => state.accessToken);
+  return accessToken !== null;
 };
 
 export default function Router() {
@@ -25,11 +27,11 @@ export default function Router() {
   const guestRoutes = [
     {
       path: '/login',
-      element: isAuthenticated() ? <Navigate to="/" /> : <Login />
+      element: <Login />
     },
     {
       path: '/signup',
-      element: isAuthenticated() ? <Navigate to="/" /> : <Signup />
+      element: <Signup />
     }
   ];
 

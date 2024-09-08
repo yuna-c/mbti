@@ -1,3 +1,39 @@
+import { useMutation } from '@tanstack/react-query';
+import { useNavigate } from 'react-router-dom';
+import { login } from '../../api/auth';
+
+import AuthForm from '../common/AuthForm';
+import useAuthStore from '../../store/AuthStore';
+
 export default function Login() {
-  return <div className="Login">Login</div>
+  const setAuth = useAuthStore((state) => state.setAuth);
+  const navigate = useNavigate();
+
+  const mutation = useMutation({
+    mutationFn: login,
+    onSuccess: (data) => {
+      const { accessToken, nickname } = data;
+
+      // 로컬 스토리지 및 zustand에 상태 저장
+      setAuth(accessToken, nickname);
+      localStorage.setItem('accessToken', accessToken);
+      localStorage.setItem('nickname', nickname);
+
+      navigate('/');
+    },
+    onError: (error) => {
+      console.error('로그인 실패:', error);
+    }
+  });
+
+  const onHandleLogin = (userData) => {
+    mutation.mutate(userData);
+  };
+
+  return (
+    <div className="Login">
+      <h2>로그인</h2>
+      <AuthForm mode="login" onSubmit={onHandleLogin} />
+    </div>
+  );
 }

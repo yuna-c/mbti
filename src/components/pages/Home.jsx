@@ -1,3 +1,16 @@
+import { Link } from 'react-router-dom';
+import useAuthStore from '../../store/AuthStore';
+
 export default function Home() {
-  return <div className="Home">Home</div>
+  const accessToken = useAuthStore((state) => state.accessToken);
+
+  return (
+    <div className="Home">
+      <div>
+        <h1>무료 성격 테스트</h1>
+        <p>자신의 성격 유형을 확인할 수 있도록 솔직하게 답변해 주세요.</p>
+        {!accessToken ? <Link to="/login">로그인하기</Link> : ''}
+      </div>
+    </div>
+  );
 }
