@@ -1,3 +1,33 @@
+import { useState } from 'react';
+import { updateProfile } from '../../api/auth';
+import { useMutation } from '@tanstack/react-query';
+
+import useAuthStore from '../../store/AuthStore';
+
 export default function Profile() {
-  return <div className="Profile">Profile</div>
+  const [nickname, setNickname] = useState('');
+  const token = useAuthStore((state) => state.accessToken);
+
+  const mutation = useMutation({
+    mutationFn: (newNickname) => updateProfile(token, { nickname: newNickname }),
+    onSuccess: (data) => {
+      console.log('프로필 업데이트 성공:', data);
+      localStorage.setItem('nickname', nickname);
+    },
+    onError: (error) => {
+      console.error('닉네임 변경 실패:', error);
+    }
+  });
+
+  const handleNicknameChange = async () => {
+    mutation.mutate(nickname);
+  };
+
+  return (
+    <div>
+      <h1>프로필 업데이트</h1>
+      <input type="text" value={nickname} onChange={(e) => setNickname(e.target.value)} placeholder="새 닉네임" />
+      <button onClick={handleNicknameChange}>닉네임 변경</button>
+    </div>
+  );
 }
