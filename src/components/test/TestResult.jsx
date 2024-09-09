@@ -2,30 +2,30 @@ import { useEffect, useState } from 'react';
 import { getTestResults } from '../../api/testResults';
 import TestResultList from './TestResultList';
 import { useLocation } from 'react-router-dom';
+import useTestStore from '../../store/useTestStore';
 
 const TestResult = () => {
   const location = useLocation();
-  const [results, setResults] = useState([]);
-  const [showResultsList, setShowResultsList] = useState(false); // 전체 게시물 보이기 상태 추가
+  const [showResultsList, setShowResultsList] = useState(false);
+  const { results, setResults } = useTestStore();
   const { result, nickname, description } = location.state || {};
-  console.log(`result =>`, result);
 
   const fetchResults = async () => {
-    const fetchedResults = await getTestResults();
-    setResults(fetchedResults);
+    try {
+      // setLoading(true);
+      const fetchedResults = await getTestResults();
+      setResults(fetchedResults); // 상태 업데이트
+    } catch (error) {
+      console.error('결과를 가져오는 중 오류 발생:', error);
+    } finally {
+      // setLoading(false);
+    }
   };
 
+  // 마운트시 테스트 결과 가져옴
   useEffect(() => {
     fetchResults();
   }, []);
-
-  const handleUpdate = () => {
-    fetchResults();
-  };
-
-  const handleDelete = () => {
-    fetchResults();
-  };
 
   const handleShowResultsList = () => {
     setShowResultsList(true);
@@ -58,7 +58,8 @@ const TestResult = () => {
 
       {showResultsList && (
         <div className="flex flex-col items-center justify-center w-full p-8 bg-white rounded-lg shadow-lg">
-          <TestResultList results={results} result={result} onUpdate={handleUpdate} onDelete={handleDelete} />
+          {/* {loading ? (<p>결과를 불러오는 중입니다...</p>) : ()} */}
+          <TestResultList results={results} onUpdate={fetchResults} onDelete={fetchResults} />
         </div>
       )}
     </>
