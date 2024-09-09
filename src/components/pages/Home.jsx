@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import useAuthStore from '../../store/AuthStore';
+import useAuthStore from '../../store/useAuthStore';
 
 export default function Home() {
   const accessToken = useAuthStore((state) => state.accessToken);

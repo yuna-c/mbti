@@ -1,5 +1,5 @@
 import TestForm from './TestForm';
-import useAuthStore from '../../store/AuthStore';
+import useAuthStore from '../../store/useAuthStore';
 import calculateMBTI from '../../utils/calculateMBTI';
 
 import { useNavigate } from 'react-router-dom';

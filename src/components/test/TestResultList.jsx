@@ -1,6 +1,6 @@
 import React from 'react';
 import TestResultItem from './TestResultItem';
-import useAuthStore from '../../store/AuthStore';
+import useAuthStore from '../../store/useAuthStore';
 
 const TestResultList = ({ result, results, onUpdate, onDelete }) => {
   const { userId } = useAuthStore((state) => ({

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { updateProfile } from '../../api/auth';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import useAuthStore from '../../store/AuthStore';
+import useAuthStore from '../../store/useAuthStore';
 
 export default function Profile() {
   const queryClient = useQueryClient();

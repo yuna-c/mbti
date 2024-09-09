@@ -25,6 +25,45 @@
       "description": "독립적이고 전략적이며, 높은 목표를 설정하고 달성하는 데 집중합니다.",
       "date": "2024-09-09T21:13:04.110Z",
       "visibility": true
+    },
+    {
+      "id": "d472",
+      "userId": "tester123454",
+      "nickname": "강구",
+      "result": "ESTJ",
+      "answers": [
+        "예",
+        "예"
+      ],
+      "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
+      "date": "2024-09-09T21:55:11.077Z",
+      "visibility": false
+    },
+    {
+      "id": "9562",
+      "userId": "tester123454",
+      "nickname": "강구",
+      "result": "ISTJ",
+      "answers": [
+        "아니오",
+        "예"
+      ],
+      "description": "책임감 있고 신뢰할 수 있으며, 전통적이고 실용적인 사고방식을 가지고 있습니다.",
+      "date": "2024-09-09T21:58:40.433Z",
+      "visibility": true
+    },
+    {
+      "id": "416f",
+      "userId": "testa1234",
+      "nickname": " rrddf",
+      "result": "ESTJ",
+      "answers": [
+        "예",
+        "예"
+      ],
+      "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
+      "date": "2024-09-09T21:58:54.198Z",
+      "visibility": true
     }
   ]
 }

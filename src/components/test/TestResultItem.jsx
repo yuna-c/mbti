@@ -1,6 +1,6 @@
 import React from 'react';
 import { deleteTestResult, updateTestResultVisibility } from '../../api/testResults';
-import useAuthStore from '../../store/AuthStore';
+import useAuthStore from '../../store/useAuthStore';
 import { MBTI_DESCRIPTIONS } from './../../utils/mbtiDescriptions';
 
 const TestResultItem = ({ result, onUpdate, onDelete }) => {
