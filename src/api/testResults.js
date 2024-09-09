@@ -5,9 +5,19 @@ export const getTestResults = async () => {
   return data;
 };
 
+// export const createTestResult = async (resultData) => {
+//   const { data } = await api.post('/testResults', resultData);
+//   return data;
+// };
+
 export const createTestResult = async (resultData) => {
-  const { data } = await api.post('/testResults', resultData);
-  return data;
+  try {
+    const { data } = await api.post('/testResults', resultData);
+    return data;
+  } catch (error) {
+    console.error('서버와 통신 중 오류 발생:', error);
+    throw error; // 오류가 발생하면 이를 상위로 던져줌
+  }
 };
 
 export const deleteTestResult = async (id) => {

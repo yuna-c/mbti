@@ -9,10 +9,11 @@ const TestResultList = ({ result, results, onUpdate, onDelete }) => {
 
   console.log(`results=>`, results);
   console.log(`result=>`, result);
+
   return (
     <>
       <div className="space-y-4">
-        <h1 className="mb-6 text-3xl  text-center text-primary-color">모든 테스트 결과</h1>
+        <h1 className="mb-6 text-3xl text-center text-primary-color">모든 테스트 결과</h1>
 
         {results
           .filter((result) => result.visibility || result.userId === userId)

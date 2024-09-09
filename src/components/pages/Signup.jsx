@@ -2,7 +2,7 @@ import { register } from '../../api/auth';
 import { useNavigate } from 'react-router-dom';
 import { useMutation } from '@tanstack/react-query';
 
-import AuthForm from '../common/AuthForm';
+import AuthForm from '../common/ui/AuthForm';
 import useAuthStore from '../../store/AuthStore';
 
 export default function Signup() {

@@ -5,6 +5,7 @@
 
 // yarn add axios
 // yarn add @tanstack/react-query @tanstack/react-query-devtools
+// yarn add @tanstack/react-query@latest @tanstack/react-query-devtools@latest 최신
 
 // yarn add react-router-dom
 // yarn add react-intersection-observer
@@ -17,3 +18,9 @@
 // npx tailwindcss init -p
 
 // https://github.com/typicode/json-server
+
+// rm -rf node_modules yarn.lock 삭제
+// yarn install
+
+// yarn add @tanstack/react-query@latest
+// yarn add react@latest react-dom@latest

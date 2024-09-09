@@ -14,6 +14,12 @@ const useAuthStore = create((set) => ({
     localStorage.setItem('userId', userId);
   },
 
+  // 닉네임 업데이트
+  setNickname: (nickname) => {
+    set({ nickname });
+    localStorage.setItem('nickname', nickname);
+  },
+
   // 로그아웃 함수 (모든 정보를 초기화)
   clearAuth: () => {
     set({ accessToken: null, nickname: null, userId: null });

@@ -12,6 +12,19 @@
       "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
       "date": "2024-09-09T19:05:42.325Z",
       "visibility": true
+    },
+    {
+      "id": "fe1f",
+      "userId": "tester997777",
+      "nickname": "하츄핑",
+      "result": "INTJ",
+      "answers": [
+        "아니오",
+        "아니오"
+      ],
+      "description": "독립적이고 전략적이며, 높은 목표를 설정하고 달성하는 데 집중합니다.",
+      "date": "2024-09-09T21:13:04.110Z",
+      "visibility": true
     }
   ]
 }
