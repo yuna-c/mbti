@@ -1,164 +1,16 @@
 {
   "testResults": [
     {
-      "id": "ca51",
-      "userId": null,
-      "nickname": "새로고침하면돼?",
-      "result": "INTJ",
-      "answers": [
-        null,
-        null
-      ],
-      "date": "2024-09-08T18:21:40.178Z",
-      "visibility": true
-    },
-    {
-      "id": "3a45",
-      "userId": null,
-      "nickname": "새로고침하면돼?",
+      "id": "b2f8",
+      "userId": "tester997777",
+      "nickname": "강남순",
       "result": "ESTJ",
       "answers": [
         "예",
         "예"
       ],
-      "date": "2024-09-08T18:21:49.300Z",
-      "visibility": true
-    },
-    {
-      "id": "d4bd",
-      "userId": null,
-      "nickname": "새로고침하면돼?",
-      "result": "INTJ",
-      "answers": [
-        "아니오",
-        "아니오"
-      ],
-      "date": "2024-09-08T18:22:17.386Z",
-      "visibility": true
-    },
-    {
-      "id": "34cc",
-      "userId": null,
-      "nickname": "새로고침하면돼?",
-      "result": "INTJ",
-      "answers": [
-        "아니오",
-        "아니오"
-      ],
-      "date": "2024-09-08T18:22:45.660Z",
-      "visibility": true
-    },
-    {
-      "id": "672e",
-      "userId": null,
-      "nickname": "새로고침하면돼?",
-      "result": "ESTJ",
-      "answers": [
-        "예",
-        "예"
-      ],
-      "date": "2024-09-08T18:23:06.971Z",
-      "visibility": true
-    },
-    {
-      "id": "f10d",
-      "userId": null,
-      "nickname": "새로고침하면돼?",
-      "result": "ISTP",
-      "answers": [
-        "아니오",
-        "예",
-        "예",
-        "아니오",
-        "아니오",
-        "아니오",
-        "예",
-        "아니오",
-        "아니오",
-        "예",
-        "예",
-        "아니오",
-        "아니오",
-        "예",
-        "예",
-        "아니오",
-        "아니오",
-        "예",
-        "예",
-        "아니오"
-      ],
-      "date": "2024-09-08T18:33:35.863Z",
-      "visibility": true
-    },
-    {
-      "id": "3726",
-      "userId": null,
-      "nickname": "새로고침하면돼?",
-      "result": "INTJ",
-      "answers": [
-        "아니오",
-        "아니오"
-      ],
-      "date": "2024-09-08T18:36:25.674Z",
-      "visibility": true
-    },
-    {
-      "id": "2cd1",
-      "nickname": "새로고침하면돼?",
-      "result": "ESTJ",
-      "answers": [
-        "예",
-        "예"
-      ],
-      "date": "2024-09-08T18:41:08.933Z",
-      "visibility": true
-    },
-    {
-      "id": "8544",
-      "userId": "tester999999",
-      "nickname": "새로고침하면돼?",
-      "result": "ESTJ",
-      "answers": [
-        "예",
-        "예"
-      ],
-      "date": "2024-09-08T18:42:11.232Z",
-      "visibility": true
-    },
-    {
-      "id": "c17d",
-      "userId": "tester999999",
-      "nickname": "새로고침하면돼?",
-      "result": "INTJ",
-      "answers": [
-        "아니오",
-        "아니오"
-      ],
-      "date": "2024-09-08T19:04:35.676Z",
-      "visibility": true
-    },
-    {
-      "id": "6005",
-      "userId": "tester999999",
-      "nickname": "새로고침하면돼?",
-      "result": "ESTJ",
-      "answers": [
-        "예",
-        "예"
-      ],
-      "date": "2024-09-08T19:05:08.839Z",
-      "visibility": true
-    },
-    {
-      "id": "3ff4",
-      "userId": "dfsdfsdfsdgtrunui",
-      "nickname": "dfsdfsdfsdgtrunui",
-      "result": "INTJ",
-      "answers": [
-        "아니오",
-        "아니오"
-      ],
-      "date": "2024-09-08T19:41:10.641Z",
+      "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
+      "date": "2024-09-09T19:05:42.325Z",
       "visibility": true
     }
   ]

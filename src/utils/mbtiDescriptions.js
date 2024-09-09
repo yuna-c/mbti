@@ -1,4 +1,4 @@
-export const mbtiDescriptions = {
+export const MBTI_DESCRIPTIONS = {
   ISTJ: '책임감 있고 신뢰할 수 있으며, 전통적이고 실용적인 사고방식을 가지고 있습니다.',
   ISFJ: '헌신적이고 따뜻하며, 사람들의 필요를 잘 이해하고 도와줍니다.',
   INFJ: '이상적이며 통찰력이 뛰어나고, 사람들과의 깊은 관계를 중요시합니다.',

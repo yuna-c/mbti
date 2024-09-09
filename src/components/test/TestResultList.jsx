@@ -1,14 +1,27 @@
+import React from 'react';
 import TestResultItem from './TestResultItem';
-export default function TestResultList({ results, user, onUpdate, onDelete }) {
+import useAuthStore from '../../store/AuthStore';
+
+const TestResultList = ({ result, results, onUpdate, onDelete }) => {
+  const { userId } = useAuthStore((state) => ({
+    userId: state.userId
+  }));
+
+  console.log(`results=>`, results);
+  console.log(`result=>`, result);
   return (
-    <div className="TestResultList">
+    <>
       <div className="space-y-4">
+        <h1 className="mb-6 text-3xl  text-center text-primary-color">모든 테스트 결과</h1>
+
         {results
-          .filter((result) => result.visibility || result.userId === user.id)
+          .filter((result) => result.visibility || result.userId === userId)
           .map((result) => (
-            <TestResultItem key={result.id} result={result} user={user} onUpdate={onUpdate} onDelete={onDelete} />
+            <TestResultItem key={result.id} result={result} onUpdate={onUpdate} onDelete={onDelete} />
           ))}
       </div>
-    </div>
+    </>
   );
-}
+};
+
+export default TestResultList;

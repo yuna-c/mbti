@@ -1,37 +1,32 @@
-import axios from 'axios';
-
-const API_URL = 'https://moneyfulpublicpolicy.co.kr';
+import { auth } from '../instance/Instance';
 
 export const register = async (userData) => {
-  const response = await axios.post(`${API_URL}/register`, userData);
-  return response.data;
+  const { data } = await auth.post(`/register`, userData);
+  return data;
 };
 
 export const login = async (userData) => {
-  const response = await axios.post(`${API_URL}/login`, userData);
-  return response.data;
+  const { data } = await auth.post(`/login`, userData);
+  return data;
 };
 
 export const getUserProfile = async (token) => {
-  const response = await axios.get(`${API_URL}/login`, {
+  const { data } = await auth.get(`/login`, {
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${token}`
     }
   });
-  return response.data;
+  return data;
 };
 
 export const updateProfile = async (token, userData) => {
-  const response = await axios.patch(
-    `${API_URL}/profile`,
-    // 변경할 닉네임을 userData로 받음
+  const { data } = await auth.patch(
+    `/profile`,
     { nickname: userData.nickname },
     {
-      headers: {
-        Authorization: `Bearer ${token}`
-      }
+      headers: { Authorization: `Bearer ${token}` }
     }
   );
-  return response.data;
+  return data;
 };

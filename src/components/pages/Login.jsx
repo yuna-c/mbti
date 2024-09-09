@@ -13,13 +13,7 @@ export default function Login() {
     mutationFn: login,
     onSuccess: (data) => {
       const { accessToken, nickname, userId } = data;
-      // Test 결과 DB 저장을 위한 userId 저장, 중복 storage.setItem삭제
       setAuth(accessToken, nickname, userId);
-
-      // 다시 사라지는 이유는 ... 이렇게 안해서 그런가?
-      localStorage.setItem('accessToken', accessToken);
-      localStorage.setItem('nickname', nickname);
-      localStorage.setItem('userId', userId);
       navigate('/');
     },
     onError: (error) => {

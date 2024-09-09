@@ -2,7 +2,11 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        jua: ['Jua', 'sans-serif'] // Jua 폰트 추가
+      }
+    }
   },
   plugins: []
-}
+};

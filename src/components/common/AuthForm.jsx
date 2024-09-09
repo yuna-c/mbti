@@ -17,10 +17,7 @@ const AuthForm = ({ mode, onSubmit }) => {
 
   const onHandleSubmit = async (e) => {
     e.preventDefault();
-    if (onSubmit) {
-      // 부모 컴포넌트로부터 받은 onSubmit 함수
-      await onSubmit(formData);
-    }
+    if (onSubmit) await onSubmit(formData);
   };
 
   return (

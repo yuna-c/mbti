@@ -1,18 +1,19 @@
-import { useMutation } from '@tanstack/react-query';
 import { register } from '../../api/auth';
-import useAuthStore from '../../store/AuthStore';
-import AuthForm from '../common/AuthForm';
 import { useNavigate } from 'react-router-dom';
+import { useMutation } from '@tanstack/react-query';
+
+import AuthForm from '../common/AuthForm';
+import useAuthStore from '../../store/AuthStore';
 
 export default function Signup() {
   const setAuth = useAuthStore((state) => state.setAuth);
   const navigate = useNavigate();
+
   const mutation = useMutation({
     mutationFn: register,
     onSuccess: (data) => {
       // 성공 시 zustand 상태 업데이트
-      console.log('회원가입 성공:', data); // 응답 데이터 확인
-      // const { accessToken, nickname, userId } = data;
+      console.log('회원가입 성공:', data);
       setAuth(data.accessToken, data.nickname, data.userId);
       navigate('/login');
     },
@@ -22,8 +23,8 @@ export default function Signup() {
   });
 
   const onHandleSignup = (userData) => {
-    console.log('회원가입 데이터:', userData); // 전달된 회원가입 데이터 확인
-    mutation.mutate(userData); // 회원가입 실행
+    console.log('회원가입 데이터:', userData);
+    mutation.mutate(userData);
   };
 
   return (

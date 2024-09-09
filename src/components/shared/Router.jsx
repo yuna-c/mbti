@@ -4,15 +4,10 @@ import Login from '../pages/Login';
 import Signup from '../pages/Signup';
 import Profile from '../pages/Profile';
 import TestPage from '../test/TestPage';
-import TestResultPage from '../test/TestResultPage';
 import Layout from '../common/Layout';
 import ProtectedRoute from './ProtectedRoute';
-import useAuthStore from '../../store/AuthStore';
-
-const isAuthenticated = () => {
-  const accessToken = useAuthStore((state) => state.accessToken);
-  return accessToken !== null;
-};
+import TestResult from '../test/TestResult';
+import TestResultItem from '../test/TestResultItem';
 
 export default function Router() {
   // 공통
@@ -58,12 +53,12 @@ export default function Router() {
       ]
     },
     {
-      path: '/results',
+      path: '/result',
       element: <ProtectedRoute />,
       children: [
         {
           path: '',
-          element: <TestResultPage />
+          element: <TestResult />
         }
       ]
     }
