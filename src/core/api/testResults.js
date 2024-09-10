@@ -27,6 +27,9 @@ export const createTestResult = async (resultData) => {
 
 // 테스트 결과 삭제
 export const deleteTestResult = async (id) => {
+  if (!id) {
+    throw new Error('삭제할 테스트 결과의 ID가 필요합니다.');
+  }
   try {
     const { data } = await api.delete(`/testResults/${id}`);
     return data;
