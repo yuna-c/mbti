@@ -2,7 +2,7 @@ import Router from './components/shared/Router';
 
 export default function App() {
   return (
-    <div className="max-w-screen-xl min-h-screen mx-auto text-xl bg-white font-jua wrap">
+    <div className="relative overflow-x-hidden text-xl bg-white mx-a uto z-10min-h-screen font-jua wrap">
       <Router />
     </div>
   );

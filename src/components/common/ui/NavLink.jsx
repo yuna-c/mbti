@@ -4,7 +4,7 @@ export default function NavLink({ to, label, className = '' }) {
   return (
     <RouterNavLink
       to={to}
-      className={({ isActive }) => `inline-flex ${className} ${isActive ? 'active text-red-400' : 'text-black-500'}`}
+      className={({ isActive }) => `inline-flex ${className} ${isActive ? 'active text-customPink' : 'text-black'}`}
     >
       {label}
     </RouterNavLink>

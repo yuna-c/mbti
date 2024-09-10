@@ -9,7 +9,7 @@ export default function TestResultList({ results, onUpdate, onDelete }) {
 
   return (
     <Article className="Result">
-      <h1 className="mb-6 text-3xl text-center text-primary-color">모든 테스트 결과</h1>
+      <h1 className="mb-6 text-3xl text-primary-color">모든 테스트 결과</h1>
 
       {results
         .filter((result) => result.visibility || result.userId === userId)

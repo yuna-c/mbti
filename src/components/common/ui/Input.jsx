@@ -7,7 +7,7 @@ export default function Input({ type, name, value, onChange, placeholder, requir
       onChange={onChange}
       placeholder={placeholder}
       required={required}
-      className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300"
+      className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-customPink"
     />
   );
 }

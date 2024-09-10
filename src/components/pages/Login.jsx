@@ -17,7 +17,8 @@ export default function Login() {
 
   return (
     <Article className="Login">
-      <h1 className="mb-6 text-3xl text-center">로그인</h1>
+      <h1 className="mb-6 text-3xl">로그인</h1>
+      {/* text-center */}
       <AuthForm mode="login" onSubmit={onHandleLogin} />
     </Article>
   );

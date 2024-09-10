@@ -20,7 +20,7 @@ export default function TestForm({ onSubmit }) {
   };
 
   return (
-    <form onSubmit={onHandleSubmit} className="w-full max-w-md space-y-4 TestForm">
+    <form onSubmit={onHandleSubmit} className="w-full space-y-4 TestForm">
       {questions.map((guess, index) => (
         <div key={guess.id} className="mb-4">
           <p>{guess.question}</p>
@@ -34,8 +34,8 @@ export default function TestForm({ onSubmit }) {
                 onChange={() => onHandleChange(index, opt)}
                 className="hidden peer"
               />
-              <div className="w-4 h-4 m-2 border-2 border-gray-300 rounded-full peer-checked:border-red-400 peer-checked:bg-red-400"></div>
-              <span className="flex items-center text-black peer-checked:text-red-400">{opt}</span>
+              <div className="w-4 h-4 m-2 border-2 border-gray-300 rounded-full peer-checked:border-customPink peer-checked:bg-customPink"></div>
+              <span className="flex text-black peer-checked:text-customPink">{opt}</span>
             </label>
           ))}
         </div>

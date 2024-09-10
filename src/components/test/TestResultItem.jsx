@@ -34,20 +34,24 @@ export default function TestResultItem({ result, onUpdate, onDelete }) {
   };
 
   return (
-    <div className="p-6 mb-4 border rounded-lg shadow-md border-slate-50 hover:shadow-lg">
-      <div className="flex items-center justify-between pb-3 mb-3 border-b">
-        <h4 className="text-xl text-red-400">{result.nickname}</h4>
-        <p className="text-sm text-gray-400">{formattedDate}</p>
+    <div className="p-6 mb-4 bg-white border border-black rounded-lg shadow-md hover:shadow-lg ">
+      <div className="flex justify-between pb-3 mb-3 border-b border-black">
+        <h4 className="text-2xl font-medium text-customPink">{result.nickname}</h4>
+        <p className="text-sm text-black">{formattedDate}</p>
       </div>
-      <p className="mb-4 text-2xl text-red-300">{result.result}</p>
-      <p className="mb-4 text-base text-gray-500">{description}</p>
+
+      <p className="mb-4 text-2xl text-customBlue">{result.result}</p>
+      <p className="mb-4 text-black">{description}</p>
 
       {isOwner && (
         <div className="flex justify-end space-x-4">
-          <Button onClick={handleToggleVisibility} className="px-4 py-2 text-base !bg-blue-400 hover:!bg-blue-300">
+          <Button
+            onClick={handleToggleVisibility}
+            className="px-4 py-2 text-lg !bg-customBlue hover:!bg-customBlue-light"
+          >
             {result.visibility ? '비공개로 전환' : '공개로 전환'}
           </Button>
-          <Button onClick={handleDelete} className="px-3 py-1 ml-3 text-base">
+          <Button onClick={handleDelete} className="px-3 py-1 ml-3 text-lg">
             삭제
           </Button>
         </div>

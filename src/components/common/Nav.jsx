@@ -13,10 +13,7 @@ export default function Nav() {
   };
 
   return (
-    <nav
-      aria-label="Global"
-      className="flex items-center justify-between p-4 mx-auto border-b border-stone-950 max-w-7xl Nav"
-    >
+    <nav aria-label="Global" className="relative z-10 flex items-center justify-between mx-auto px-14 Nav">
       <div className="flex items-center Logo">
         <NavLink to="/" label="홈" />
       </div>
@@ -34,7 +31,7 @@ export default function Nav() {
             </li>
             <li className="flex items-center ml-2">
               <p>
-                <span className="text-red-400">❤{nickname}❤</span>
+                <span className="text-customPink">❤ {nickname} ❤</span>
               </p>
               <Button onClick={onHandleLogout} className="px-3 py-1 ml-3 text-base">
                 로그아웃

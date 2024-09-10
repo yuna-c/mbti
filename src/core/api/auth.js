@@ -14,7 +14,7 @@ export const register = async (userData) => {
 // 로그인
 export const login = async (userData) => {
   try {
-    const { data } = await auth.post(`/login`, userData);
+    const { data } = await auth.post(`/login?expiresIn=10m`, userData);
     return data;
   } catch (error) {
     console.error('로그인 중 오류 발생 (login):', error.response?.data || error.message);

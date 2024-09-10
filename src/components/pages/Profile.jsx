@@ -14,8 +14,9 @@ export default function Profile() {
 
   return (
     <Article className="Profile">
-      <h1 className="mb-6 text-3xl text-center">프로필 업데이트</h1>
-      <form onSubmit={(e) => e.preventDefault()} className="w-full max-w-md space-y-4">
+      <h1 className="mb-6 text-3xl text-black">프로필 업데이트</h1>
+      {/*  text-center */}
+      <form onSubmit={(e) => e.preventDefault()} className="w-full space-y-4">
         <Input type="text" value={nickname} onChange={(e) => setNickname(e.target.value)} placeholder="새 닉네임" />
         <Button onClick={handleNicknameChange} className="w-full p-2">
           변경 하기
