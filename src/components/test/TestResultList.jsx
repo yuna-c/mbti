@@ -3,7 +3,7 @@ import TestResultItem from './TestResultItem';
 import useAuthStore from '../../store/useAuthStore';
 import Article from '../common/ui/Article';
 
-const TestResultList = ({ results, onUpdate, onDelete }) => {
+export default function TestResultList({ results, onUpdate, onDelete }) {
   const { userId } = useAuthStore((state) => ({
     userId: state.userId
   }));
@@ -19,6 +19,4 @@ const TestResultList = ({ results, onUpdate, onDelete }) => {
         ))}
     </Article>
   );
-};
-
-export default TestResultList;
+}

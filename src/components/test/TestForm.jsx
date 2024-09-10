@@ -25,16 +25,17 @@ export default function TestForm({ onSubmit }) {
         <div key={guess.id} className="mb-4">
           <p>{guess.question}</p>
           {guess.options.map((opt, idx) => (
-            <label key={idx} className="block">
+            <label key={idx} className="flex gap-2">
               <input
                 type="radio"
                 name={`question-${index}`}
                 value={opt}
                 checked={answers[index] === opt}
                 onChange={() => onHandleChange(index, opt)}
-                className="mr-2"
+                className="hidden peer"
               />
-              {opt}
+              <div className="w-4 h-4 m-2 border-2 border-gray-300 rounded-full peer-checked:border-red-400 peer-checked:bg-red-400"></div>
+              <span className="flex items-center text-black peer-checked:text-red-400">{opt}</span>
             </label>
           ))}
         </div>

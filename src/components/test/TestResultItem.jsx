@@ -3,7 +3,7 @@ import useAuthStore from '../../store/useAuthStore';
 import Button from '../common/ui/Button';
 import { mbtiDescriptions } from '../../data/descriptions';
 
-const TestResultItem = ({ result, onUpdate, onDelete }) => {
+export default function TestResultItem({ result, onUpdate, onDelete }) {
   const { userId } = useAuthStore((state) => ({
     userId: state.userId
   }));
@@ -54,6 +54,4 @@ const TestResultItem = ({ result, onUpdate, onDelete }) => {
       )}
     </div>
   );
-};
-
-export default TestResultItem;
+}

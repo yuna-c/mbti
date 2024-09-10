@@ -1,9 +1,16 @@
-import { useNav } from '../../hook/useNav';
+import { useLogout } from '../../hook/useAuth';
+import { useNavigate } from 'react-router-dom';
 import Button from './ui/Button';
 import NavLink from './ui/NavLink';
 
 export default function Nav() {
-  const { accessToken, nickname, onHandleLogout } = useNav();
+  const navigate = useNavigate();
+  const { accessToken, nickname, clearAuth } = useLogout();
+
+  const onHandleLogout = () => {
+    clearAuth();
+    navigate('/');
+  };
 
   return (
     <nav
