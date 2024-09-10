@@ -15,8 +15,8 @@ export default function TestForm({ onSubmit }) {
 
   const onHandleSubmit = (e) => {
     e.preventDefault();
-    // 부모 컴포넌트로 제출 결과 전송
     onSubmit(answers);
+    console.log('제출 완료');
   };
 
   return (
