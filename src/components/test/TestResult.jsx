@@ -14,9 +14,9 @@ export default function TestResult() {
   }
 
   return (
-    <div className="max-w-2xl p-6 mx-auto mt-10 mb-10 bg-white rounded-lg shadow-md TestResultPage">
-      <h1 className="mb-6 text-3xl text-center text-primary-color">MBTI 테스트 결과</h1>
-      <div className="w-full max-w-2xl bg-white">
+    <article className="flex flex-col items-center justify-center p-8 TestResult">
+      <h1 className="mb-6 text-3xl text-center">MBTI 테스트 결과</h1>
+      <div className="w-full">
         <div className="mb-6 text-center">
           <p className="text-lg">닉네임: {currentResult.nickname}</p>
           <p className="text-lg">MBTI 유형: {currentResult.result}</p>
@@ -27,6 +27,6 @@ export default function TestResult() {
           </button>
         </div>
       </div>
-    </div>
+    </article>
   );
 }

@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import Button from './Button';
+import Input from './Input';
 
-const AuthForm = ({ mode, onSubmit }) => {
+export default function AuthForm({ mode, onSubmit }) {
   const [formData, setFormData] = useState({
     id: '',
     password: '',
@@ -21,41 +23,29 @@ const AuthForm = ({ mode, onSubmit }) => {
   };
 
   return (
-    <form onSubmit={onHandleSubmit}>
+    <form onSubmit={onHandleSubmit} className="w-full max-w-md space-y-4">
       {mode === 'signup' && (
-        <input
+        <Input
           type="text"
           name="nickname"
           value={formData.nickname}
           onChange={onHandleChange}
           placeholder="닉네임"
           required
-          className="w-full p-4 border border-gray-300 rounded-lg"
         />
       )}
-      <input
-        type="text"
-        name="id"
-        value={formData.id}
-        onChange={onHandleChange}
-        placeholder="아이디"
-        required
-        className="w-full p-4 border border-gray-300 rounded-lg"
-      />
-      <input
+      <Input type="text" name="id" value={formData.id} onChange={onHandleChange} placeholder="아이디" required />
+      <Input
         type="password"
         name="password"
         value={formData.password}
         onChange={onHandleChange}
         placeholder="비밀번호"
         required
-        className="w-full p-4 border border-gray-300 rounded-lg"
       />
-      <button type="submit" className="w-full p-4 border border-gray-300 rounded-lg">
+      <Button type="submit" className="w-full p-2">
         {mode === 'login' ? '로그인' : '회원가입'}
-      </button>
+      </Button>
     </form>
   );
-};
-
-export default AuthForm;
+}

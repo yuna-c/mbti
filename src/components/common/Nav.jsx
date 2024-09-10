@@ -27,9 +27,11 @@ export default function Nav() {
             </li>
             <li className="flex items-center ml-2">
               <p>
-                <span className="text-red-400">{nickname}</span>님 환영합니다
+                <span className="text-red-400">❤{nickname}❤</span>
               </p>
-              <Button onClick={onHandleLogout}>로그아웃</Button>
+              <Button onClick={onHandleLogout} className="px-3 py-1 ml-3 text-base">
+                로그아웃
+              </Button>
             </li>
           </>
         ) : (

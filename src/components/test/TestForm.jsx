@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { questions } from '../../data/querstions';
+import Button from '../common/ui/Button';
 
 export default function TestForm({ onSubmit }) {
   // 선택한 답변을 담을 배열을 초기화
@@ -19,7 +20,7 @@ export default function TestForm({ onSubmit }) {
   };
 
   return (
-    <form className="TestForm" onSubmit={onHandleSubmit}>
+    <form onSubmit={onHandleSubmit} className="w-full max-w-md space-y-4 TestForm">
       {questions.map((guess, index) => (
         <div key={guess.id} className="mb-4">
           <p>{guess.question}</p>
@@ -38,9 +39,9 @@ export default function TestForm({ onSubmit }) {
           ))}
         </div>
       ))}
-      <button type="submit" className="w-full py-2 text-white bg-blue-500 rounded hover:bg-blue-600">
+      <Button type="submit" className="w-full p-2">
         제출 하기
-      </button>
+      </Button>
     </form>
   );
 }

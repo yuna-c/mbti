@@ -20,8 +20,8 @@ export default function TestResultListHub() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center w-full p-8 bg-white rounded-lg shadow-lg">
+    <>
       <TestResultList key={results.id} results={results} onUpdate={fetchResults} onDelete={fetchResults} />
-    </div>
+    </>
   );
 }

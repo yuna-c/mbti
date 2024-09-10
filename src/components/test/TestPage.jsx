@@ -4,7 +4,8 @@ import useTestStore from '../../store/useTestStore';
 import calculateMBTI from '../../utils/calculateMBTI';
 import { useNavigate } from 'react-router-dom';
 import { createTestResult } from '../../api/testResults';
-import { MBTI_DESCRIPTIONS } from './../../utils/mbtiDescriptions';
+import { mbtiDescriptions } from '../../data/descriptions';
+import Article from '../common/ui/Article';
 
 export default function TestPage() {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export default function TestPage() {
 
   const onHandleTestSubmit = async (answers) => {
     const result = calculateMBTI(answers);
-    const description = MBTI_DESCRIPTIONS[result];
+    const description = mbtiDescriptions[result];
 
     const resultData = {
       userId,
@@ -38,11 +39,9 @@ export default function TestPage() {
   };
 
   return (
-    <div className="TestPage">
-      <div className="mb-4 text-2xl font-bold">
-        <h1>MBTI 테스트</h1>
-        <TestForm onSubmit={onHandleTestSubmit} />
-      </div>
-    </div>
+    <Article className="TestPage">
+      <h1 className="mb-6 text-3xl text-center">MBTI 테스트 하기</h1>
+      <TestForm onSubmit={onHandleTestSubmit} />
+    </Article>
   );
 }

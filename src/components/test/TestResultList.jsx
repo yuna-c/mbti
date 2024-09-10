@@ -1,6 +1,7 @@
 import React from 'react';
 import TestResultItem from './TestResultItem';
 import useAuthStore from '../../store/useAuthStore';
+import Article from '../common/ui/Article';
 
 const TestResultList = ({ results, onUpdate, onDelete }) => {
   const { userId } = useAuthStore((state) => ({
@@ -8,17 +9,15 @@ const TestResultList = ({ results, onUpdate, onDelete }) => {
   }));
 
   return (
-    <>
-      <div className="space-y-4">
-        <h1 className="mb-6 text-3xl text-center text-primary-color">모든 테스트 결과</h1>
+    <Article className="Result">
+      <h1 className="mb-6 text-3xl text-center text-primary-color">모든 테스트 결과</h1>
 
-        {results
-          .filter((result) => result.visibility || result.userId === userId)
-          .map((result, index) => (
-            <TestResultItem key={result.id || index} result={result} onUpdate={onUpdate} onDelete={onDelete} />
-          ))}
-      </div>
-    </>
+      {results
+        .filter((result) => result.visibility || result.userId === userId)
+        .map((result, index) => (
+          <TestResultItem key={result.id || index} result={result} onUpdate={onUpdate} onDelete={onDelete} />
+        ))}
+    </Article>
   );
 };
 
