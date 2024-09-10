@@ -11,6 +11,7 @@ export default function Layout() {
         <div className="fixed pointer-events-none w-700px -z-10 -top-20 -right-12 opacity-85 Bg">
           <img src={bgImage} alt="bgImage" className="w-auto h-auto" />
         </div>
+
         <section className="min-h-[calc(100vh-11rem)] z-10 top-0 ">
           <Outlet />
         </section>

@@ -25,6 +25,7 @@ export default function TestResult() {
         <div className="w-1/3 mx-auto my-8 -z-10 -top-20 -right-12 opacity-85">
           <img src={mbtiImage} alt="ranDomImage" className="h-auto w-fit" />
         </div>
+
         <div className="mb-6 space-y-4 text-center">
           <p className="text-2xl">닉네임: {currentResult.nickname}</p>
           <p className="text-2xl">{currentResult.result}</p>

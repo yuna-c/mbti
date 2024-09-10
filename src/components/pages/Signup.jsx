@@ -18,7 +18,7 @@ export default function Signup() {
   return (
     <Article className="Signup">
       <h1 className="mb-6 text-3xl">회원가입</h1>
-      {/*  text-center */}
+
       <AuthForm mode="signup" onSubmit={onHandleSignup} />
     </Article>
   );

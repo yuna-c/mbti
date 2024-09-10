@@ -34,12 +34,14 @@ export default function TestForm({ onSubmit }) {
                 onChange={() => onHandleChange(index, opt)}
                 className="hidden peer"
               />
+
               <div className="w-4 h-4 m-2 border-2 border-gray-300 rounded-full peer-checked:border-customPink peer-checked:bg-customPink"></div>
               <span className="flex text-black peer-checked:text-customPink">{opt}</span>
             </label>
           ))}
         </div>
       ))}
+
       <Button type="submit" className="w-full p-2">
         제출 하기
       </Button>

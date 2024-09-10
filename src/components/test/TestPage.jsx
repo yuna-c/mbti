@@ -41,6 +41,7 @@ export default function TestPage() {
   return (
     <Article className="TestPage">
       <h1 className="mb-6 text-3xl">MBTI 테스트 하기</h1>
+
       <TestForm onSubmit={onHandleTestSubmit} />
     </Article>
   );

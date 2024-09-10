@@ -51,6 +51,7 @@ export default function TestResultItem({ result, onUpdate, onDelete }) {
           >
             {result.visibility ? '비공개로 전환' : '공개로 전환'}
           </Button>
+
           <Button onClick={handleDelete} className="px-3 py-1 ml-3 text-lg">
             삭제
           </Button>
