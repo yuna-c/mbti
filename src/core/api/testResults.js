@@ -1,6 +1,6 @@
 import { api } from '../instance/axiosInstance';
 
-// 테스트 결과 목록 가져오기
+// 테스트 결과 목록 가져오기 여기서 써서요
 export const getTestResults = async () => {
   try {
     const { data } = await api.get('/testResults');
@@ -13,6 +13,7 @@ export const getTestResults = async () => {
     throw new Error('테스트 결과를 불러오는 중 오류가 발생했습니다.');
   }
 };
+// 여기요? 이거 response.data 한 값인데 이걸
 
 // 테스트 결과 생성
 export const createTestResult = async (resultData) => {

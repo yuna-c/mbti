@@ -38,7 +38,8 @@ export default function TestResultItem({ result, onUpdate, onDelete }) {
   //     alert('게시물 삭제 실패. 다시 시도해 주세요.');
   //   }
   // };
-
+  // [object Object] id요
+  console.log(JSON.stringify(result), userId); // 음
   const handleToggleVisibility = async () => {
     try {
       const newVisibility = !result.visibility;
@@ -49,10 +50,10 @@ export default function TestResultItem({ result, onUpdate, onDelete }) {
       alert('게시물 공개/ 비공개 실패하였습니다. 다시 시도해 주세요!');
     }
   };
-
+  // 네네 유저 아이디가 아니라 게시물 아이디를 받아와야하나보다
   const handleDelete = async () => {
     try {
-      await deleteTestResult(result.id);
+      await deleteTestResult(result?.id); // 여기가 에러가 나는구나
       onDelete(); // 부모 컴포넌트에서 결과 목록을 다시 불러오도록 요청
     } catch (error) {
       console.error('삭제 실패:', error);
