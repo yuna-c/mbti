@@ -14,7 +14,9 @@ export const useSignUp = () => {
       queryClient.invalidateQueries();
     },
     onError: (error) => {
-      console.error('회원가입 실패:', error.response?.data || error.message);
+      const errorMessage = error.response?.data?.message || error.message || '회원가입 중 오류가 발생했습니다.';
+      console.error('회원가입 실패:', errorMessage);
+      alert(`회원가입 실패: ${errorMessage}`);
     }
   });
 
@@ -34,7 +36,9 @@ export const useLogin = () => {
       queryClient.invalidateQueries();
     },
     onError: (error) => {
-      console.error('로그인 실패:', error.response?.data || error.message);
+      const errorMessage = error.response?.data?.message || error.message || '로그인 중 오류가 발생했습니다.';
+      console.error('로그인 실패:', errorMessage);
+      alert(`로그인 실패: ${errorMessage}`);
     }
   });
 
@@ -67,7 +71,9 @@ export const useProfile = () => {
       queryClient.invalidateQueries(); // 캐시된 쿼리 무효화
     },
     onError: (error) => {
-      console.error('닉네임 변경 실패:', error);
+      const errorMessage = error.response?.data?.message || error.message || '닉네임 변경 중 오류가 발생했습니다.';
+      console.error('닉네임 변경 실패:', errorMessage);
+      alert(`닉네임 변경 실패: ${errorMessage}`);
     }
   });
 
