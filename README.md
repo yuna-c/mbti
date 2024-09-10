@@ -28,6 +28,32 @@
 
 <br/><br/>
 
+## 프로젝트 기능
+
+### 로그인 / 회원 가입
+![회원가입](https://github.com/user-attachments/assets/b48abd95-607f-403e-b6e5-7d10dd53a951)
+
+- 회원가입
+- 로그인
+
+### MBTI 테스트
+![테스트](https://github.com/user-attachments/assets/1466b20c-2f67-4949-9ae5-30b57d0a4290)
+
+- 테스트 후 내 MBTI 확인
+
+### 결과 목록
+![3333333333](https://github.com/user-attachments/assets/aed3a7a0-c770-4a9a-8396-e3a3240c5537)
+
+- 다른사람의 결과 보기
+- 내 결과 삭제/ 공개/ 비공개 처리
+
+### 마이페이지
+![444444](https://github.com/user-attachments/assets/92ae32e2-633f-4956-a5e3-0cbb6b224bfe)
+
+- 토큰만료
+- 마이페이지
+  
+<br/><br/>
 ## 파일 구조
 
 ```
@@ -107,17 +133,6 @@ mbti
 ```
 <br/><br/>
 
-## 프로젝트 기능
-
-### 로그인 / 회원 가입
-
-### MBTI 테스트
-
-### 결과 목록
-
-### 마이페이지
-
-<br/><br/>
 
 ## 트러블 슈팅
 
