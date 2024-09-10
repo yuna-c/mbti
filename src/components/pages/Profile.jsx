@@ -12,8 +12,7 @@ export default function Profile() {
 
   const { mutate } = useMutation({
     mutationFn: (newNickname) => updateProfile(token, { nickname: newNickname }),
-    onSuccess: (data) => {
-      console.log('닉네임 업데이트 성공:', data);
+    onSuccess: () => {
       setNicknameInStore(nickname);
       queryClient.invalidateQueries(); // 캐시된 쿼리 무효화
     },

@@ -1,4 +1,3 @@
-import React from 'react';
 import { deleteTestResult, updateTestResultVisibility } from '../../api/testResults';
 import useAuthStore from '../../store/useAuthStore';
 import { MBTI_DESCRIPTIONS } from './../../utils/mbtiDescriptions';
@@ -8,7 +7,6 @@ const TestResultItem = ({ result, onUpdate, onDelete }) => {
     userId: state.userId
   }));
 
-  console.log(result);
   const isOwner = result.userId === userId;
   const formattedDate = new Date(result.date).toLocaleString();
   const description = MBTI_DESCRIPTIONS[result.result] || 'MBTI 유형 설명을 찾을 수 없습니다.';

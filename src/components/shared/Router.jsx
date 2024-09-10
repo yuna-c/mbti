@@ -7,7 +7,7 @@ import TestPage from '../test/TestPage';
 import Layout from '../common/Layout';
 import ProtectedRoute from './ProtectedRoute';
 import TestResult from '../test/TestResult';
-import TestResultItem from '../test/TestResultItem';
+import TestResultListHub from '../test/TestResultListHub';
 
 export default function Router() {
   // 공통
@@ -59,6 +59,16 @@ export default function Router() {
         {
           path: '',
           element: <TestResult />
+        }
+      ]
+    },
+    {
+      path: '/resultlist',
+      element: <ProtectedRoute />,
+      children: [
+        {
+          path: '',
+          element: <TestResultListHub />
         }
       ]
     }

@@ -1,263 +1,133 @@
 {
   "testResults": [
     {
-      "id": "b2f8",
-      "userId": "tester997777",
-      "nickname": "강남순",
+      "id": "6054",
+      "userId": "testUser999",
+      "nickname": "testUser999",
       "result": "ESTJ",
       "answers": [
         "예",
         "예"
       ],
       "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
-      "date": "2024-09-09T19:05:42.325Z",
-      "visibility": true
+      "date": "2024-09-09T23:49:52.498Z",
+      "visibility": false
     },
     {
-      "id": "fe1f",
-      "userId": "tester997777",
-      "nickname": "하츄핑",
+      "id": "54cf",
+      "userId": "testUser999",
+      "nickname": "김 흐린눈",
       "result": "INTJ",
       "answers": [
         "아니오",
         "아니오"
       ],
       "description": "독립적이고 전략적이며, 높은 목표를 설정하고 달성하는 데 집중합니다.",
-      "date": "2024-09-09T21:13:04.110Z",
+      "date": "2024-09-09T23:50:11.199Z",
       "visibility": true
     },
     {
-      "id": "d472",
-      "userId": "tester123454",
-      "nickname": "강구",
+      "id": "3d1e",
+      "userId": "testUser999",
+      "nickname": "김 흐린눈",
+      "result": "ISTJ",
+      "answers": [
+        "아니오",
+        "예"
+      ],
+      "description": "책임감 있고 신뢰할 수 있으며, 전통적이고 실용적인 사고방식을 가지고 있습니다.",
+      "date": "2024-09-09T23:57:44.686Z",
+      "visibility": true
+    },
+    {
+      "id": "319b",
+      "userId": "mutate1234",
+      "nickname": "mutate1234",
+      "result": "ISTJ",
+      "answers": [
+        "아니오",
+        "예"
+      ],
+      "description": "책임감 있고 신뢰할 수 있으며, 전통적이고 실용적인 사고방식을 가지고 있습니다.",
+      "date": "2024-09-10T00:01:13.632Z",
+      "visibility": true
+    },
+    {
+      "id": "2993",
+      "userId": "mutate1234",
+      "nickname": "mutate1234",
       "result": "ESTJ",
       "answers": [
         "예",
         "예"
       ],
       "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
-      "date": "2024-09-09T21:55:11.077Z",
+      "date": "2024-09-10T00:03:01.533Z",
+      "visibility": true
+    },
+    {
+      "id": "b58a",
+      "userId": "mutate1234",
+      "nickname": "mutate1234",
+      "result": "ESTJ",
+      "answers": [
+        "예",
+        "예"
+      ],
+      "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
+      "date": "2024-09-10T00:04:09.609Z",
+      "visibility": true
+    },
+    {
+      "id": "5066",
+      "userId": "mutate1234",
+      "nickname": "mutate1234",
+      "result": "ESTJ",
+      "answers": [
+        "예",
+        "예"
+      ],
+      "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
+      "date": "2024-09-10T00:06:17.936Z",
+      "visibility": true
+    },
+    {
+      "id": "bb9e",
+      "userId": "mutate1234",
+      "nickname": "mutate1234",
+      "result": "ISTJ",
+      "answers": [
+        "아니오",
+        "예"
+      ],
+      "description": "책임감 있고 신뢰할 수 있으며, 전통적이고 실용적인 사고방식을 가지고 있습니다.",
+      "date": "2024-09-10T00:09:14.967Z",
+      "visibility": true
+    },
+    {
+      "id": "08b7",
+      "userId": "mutate1234",
+      "nickname": "mutate1234",
+      "result": "ESTJ",
+      "answers": [
+        "예",
+        "예"
+      ],
+      "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
+      "date": "2024-09-10T00:10:54.978Z",
       "visibility": false
     },
     {
-      "id": "9562",
-      "userId": "tester123454",
-      "nickname": "강구",
-      "result": "ISTJ",
-      "answers": [
-        "아니오",
-        "예"
-      ],
-      "description": "책임감 있고 신뢰할 수 있으며, 전통적이고 실용적인 사고방식을 가지고 있습니다.",
-      "date": "2024-09-09T21:58:40.433Z",
-      "visibility": true
-    },
-    {
-      "id": "416f",
-      "userId": "testa1234",
-      "nickname": " rrddf",
+      "id": "9805",
+      "userId": "mutate1234",
+      "nickname": "mutate1234",
       "result": "ESTJ",
       "answers": [
         "예",
         "예"
       ],
       "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
-      "date": "2024-09-09T21:58:54.198Z",
-      "visibility": true
-    },
-    {
-      "id": "b38b",
-      "userId": "testa1234",
-      "nickname": " rrddf",
-      "result": "ESTJ",
-      "answers": [
-        "예",
-        "예"
-      ],
-      "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
-      "date": "2024-09-09T22:17:02.539Z",
-      "visibility": true
-    },
-    {
-      "id": "48af",
-      "userId": "testa1234",
-      "nickname": " rrddf",
-      "result": "ISTJ",
-      "answers": [
-        "아니오",
-        "예"
-      ],
-      "description": "책임감 있고 신뢰할 수 있으며, 전통적이고 실용적인 사고방식을 가지고 있습니다.",
-      "date": "2024-09-09T22:17:46.863Z",
-      "visibility": true
-    },
-    {
-      "id": "9e77",
-      "userId": "testa1234",
-      "nickname": " rrddf",
-      "result": "ESTJ",
-      "answers": [
-        "예",
-        "예"
-      ],
-      "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
-      "date": "2024-09-09T22:19:34.639Z",
-      "visibility": true
-    },
-    {
-      "id": "a323",
-      "userId": "testa1234",
-      "nickname": " rrddf",
-      "result": "INTJ",
-      "answers": [
-        "아니오",
-        "아니오"
-      ],
-      "description": "독립적이고 전략적이며, 높은 목표를 설정하고 달성하는 데 집중합니다.",
-      "date": "2024-09-09T22:20:00.141Z",
-      "visibility": true
-    },
-    {
-      "id": "392f",
-      "userId": "testa1234",
-      "nickname": " rrddf",
-      "result": "ISTJ",
-      "answers": [
-        "아니오",
-        "예"
-      ],
-      "description": "책임감 있고 신뢰할 수 있으며, 전통적이고 실용적인 사고방식을 가지고 있습니다.",
-      "date": "2024-09-09T22:21:26.663Z",
-      "visibility": true
-    },
-    {
-      "id": "82c3",
-      "userId": "testa1234",
-      "nickname": " rrddf",
-      "result": "ESTJ",
-      "answers": [
-        "예",
-        "예"
-      ],
-      "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
-      "date": "2024-09-09T22:32:25.158Z",
-      "visibility": true
-    },
-    {
-      "id": "259b",
-      "userId": "testa1234",
-      "nickname": " rrddf",
-      "result": "ESTJ",
-      "answers": [
-        "예",
-        "예"
-      ],
-      "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
-      "date": "2024-09-09T22:34:40.287Z",
-      "visibility": false
-    },
-    {
-      "id": "c35a",
-      "userId": "testa1234",
-      "nickname": " rrddf",
-      "result": "ISTJ",
-      "answers": [
-        "아니오",
-        "예"
-      ],
-      "description": "책임감 있고 신뢰할 수 있으며, 전통적이고 실용적인 사고방식을 가지고 있습니다.",
-      "date": "2024-09-09T22:34:49.668Z",
-      "visibility": true
-    },
-    {
-      "id": "46be",
-      "userId": "testa1234",
-      "nickname": " rrddf",
-      "result": "ISTJ",
-      "answers": [
-        "아니오",
-        "예"
-      ],
-      "description": "책임감 있고 신뢰할 수 있으며, 전통적이고 실용적인 사고방식을 가지고 있습니다.",
-      "date": "2024-09-09T22:35:04.480Z",
-      "visibility": true
-    },
-    {
-      "id": "346f",
-      "userId": "testa1234",
-      "nickname": " rrddf",
-      "result": "ISTJ",
-      "answers": [
-        "아니오",
-        "예"
-      ],
-      "description": "책임감 있고 신뢰할 수 있으며, 전통적이고 실용적인 사고방식을 가지고 있습니다.",
-      "date": "2024-09-09T22:41:04.182Z",
-      "visibility": true
-    },
-    {
-      "id": "fcf0",
-      "userId": "testa1234",
-      "nickname": " rrddf",
-      "result": "ISTJ",
-      "answers": [
-        "아니오",
-        "예"
-      ],
-      "description": "책임감 있고 신뢰할 수 있으며, 전통적이고 실용적인 사고방식을 가지고 있습니다.",
-      "date": "2024-09-09T22:41:38.756Z",
-      "visibility": true
-    },
-    {
-      "id": "f9fc",
-      "userId": "testa1234",
-      "nickname": " rrddf",
-      "result": "ESTJ",
-      "answers": [
-        "예",
-        "예"
-      ],
-      "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
-      "date": "2024-09-09T22:50:37.880Z",
-      "visibility": true
-    },
-    {
-      "id": "b9f0",
-      "userId": "testa1234",
-      "nickname": " rrddf",
-      "result": "ESTJ",
-      "answers": [
-        "예",
-        "예"
-      ],
-      "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
-      "date": "2024-09-09T22:52:50.725Z",
-      "visibility": true
-    },
-    {
-      "id": "6488",
-      "userId": "testa1234",
-      "nickname": " rrddf",
-      "result": "ISTJ",
-      "answers": [
-        "아니오",
-        "예"
-      ],
-      "description": "책임감 있고 신뢰할 수 있으며, 전통적이고 실용적인 사고방식을 가지고 있습니다.",
-      "date": "2024-09-09T22:52:57.087Z",
-      "visibility": true
-    },
-    {
-      "id": "4dc8",
-      "userId": "testa1234",
-      "nickname": " rrddf",
-      "result": "ESTJ",
-      "answers": [
-        "예",
-        "예"
-      ],
-      "description": "체계적이고 효율적이며, 목표 달성에 집중합니다.",
-      "date": "2024-09-09T22:54:37.987Z",
+      "date": "2024-09-10T00:12:15.651Z",
       "visibility": true
     }
   ]

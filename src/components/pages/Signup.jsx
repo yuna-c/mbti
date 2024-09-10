@@ -9,11 +9,9 @@ export default function Signup() {
   const setAuth = useAuthStore((state) => state.setAuth);
   const navigate = useNavigate();
 
-  const mutation = useMutation({
+  const { mutate } = useMutation({
     mutationFn: register,
     onSuccess: (data) => {
-      // 성공 시 zustand 상태 업데이트
-      console.log('회원가입 성공:', data);
       setAuth(data.accessToken, data.nickname, data.userId);
       navigate('/login');
     },
@@ -23,8 +21,7 @@ export default function Signup() {
   });
 
   const onHandleSignup = (userData) => {
-    console.log('회원가입 데이터:', userData);
-    mutation.mutate(userData);
+    mutate(userData);
   };
 
   return (

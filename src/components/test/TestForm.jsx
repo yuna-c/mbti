@@ -39,7 +39,7 @@ export default function TestForm({ onSubmit }) {
         </div>
       ))}
       <button type="submit" className="w-full py-2 text-white bg-blue-500 rounded hover:bg-blue-600">
-        제출하기
+        제출 하기
       </button>
     </form>
   );

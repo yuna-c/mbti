@@ -23,7 +23,7 @@ export default function Nav() {
               <NavLink to="/test" label="테스트" />
             </li>
             <li className="mx-3">
-              <NavLink to="/result" label="결과보기" />
+              <NavLink to="/resultlist" label="결과보기" />
             </li>
             <li className="flex items-center ml-2">
               <p>

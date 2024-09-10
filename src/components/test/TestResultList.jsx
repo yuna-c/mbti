@@ -2,13 +2,10 @@ import React from 'react';
 import TestResultItem from './TestResultItem';
 import useAuthStore from '../../store/useAuthStore';
 
-const TestResultList = ({ result, results, onUpdate, onDelete }) => {
+const TestResultList = ({ results, onUpdate, onDelete }) => {
   const { userId } = useAuthStore((state) => ({
     userId: state.userId
   }));
-
-  console.log(`results=>`, results);
-  console.log(`result=>`, result);
 
   return (
     <>
@@ -17,8 +14,8 @@ const TestResultList = ({ result, results, onUpdate, onDelete }) => {
 
         {results
           .filter((result) => result.visibility || result.userId === userId)
-          .map((result) => (
-            <TestResultItem key={result.id} result={result} onUpdate={onUpdate} onDelete={onDelete} />
+          .map((result, index) => (
+            <TestResultItem key={result.id || index} result={result} onUpdate={onUpdate} onDelete={onDelete} />
           ))}
       </div>
     </>
