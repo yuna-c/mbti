@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import AuthForm from '../common/ui/AuthForm';
 import Article from '../common/ui/Article';
-import { useSignUp } from '../../hook/useAuth';
+import { useSignUp } from '../../core/hooks/useAuth';
 
 export default function Signup() {
   const navigate = useNavigate();

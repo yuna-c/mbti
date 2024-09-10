@@ -1,4 +1,4 @@
-import './styles/index.css';
+import './assets/styles/index.css';
 import App from './App.jsx';
 
 import { StrictMode } from 'react';

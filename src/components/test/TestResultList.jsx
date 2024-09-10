@@ -1,6 +1,5 @@
-import React from 'react';
 import TestResultItem from './TestResultItem';
-import useAuthStore from '../../store/useAuthStore';
+import useAuthStore from '../../core/stores/useAuthStore';
 import Article from '../common/ui/Article';
 
 export default function TestResultList({ results, onUpdate, onDelete }) {

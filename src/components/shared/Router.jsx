@@ -1,12 +1,12 @@
-import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Signup from '../pages/Signup';
+import Layout from '../common/Layout';
 import Profile from '../pages/Profile';
 import TestPage from '../test/TestPage';
-import Layout from '../common/Layout';
-import ProtectedRoute from './ProtectedRoute';
 import TestResult from '../test/TestResult';
+import ProtectedRoute from './ProtectedRoute';
 import TestResultListHub from '../test/TestResultListHub';
 
 export default function Router() {

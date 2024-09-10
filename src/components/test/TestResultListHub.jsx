@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import { getTestResults } from '../../api/testResults';
 import TestResultList from './TestResultList';
-import useTestStore from '../../store/useTestStore';
+import { getTestResults } from '../../core/api/testResults';
+import useTestStore from '../../core/stores/useTestStore';
 
 export default function TestResultListHub() {
   const { results, setResults } = useTestStore(); // 전역 상태에서 결과 가져옴

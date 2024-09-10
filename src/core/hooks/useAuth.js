@@ -1,5 +1,5 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import useAuthStore from '../store/useAuthStore';
+import useAuthStore from '../stores/useAuthStore';
 import { login, register, updateProfile } from '../api/auth';
 
 // 회원가입

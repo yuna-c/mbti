@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
+import { useLogin } from '../../core/hooks/useAuth';
 import AuthForm from '../common/ui/AuthForm';
 import Article from '../common/ui/Article';
-import { useLogin } from '../../hook/useAuth';
 
 export default function Login() {
   const navigate = useNavigate();

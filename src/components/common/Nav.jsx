@@ -1,5 +1,5 @@
-import { useLogout } from '../../hook/useAuth';
 import { useNavigate } from 'react-router-dom';
+import { useLogout } from '../../core/hooks/useAuth';
 import Button from './ui/Button';
 import NavLink from './ui/NavLink';
 

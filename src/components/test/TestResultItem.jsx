@@ -1,7 +1,7 @@
-import { deleteTestResult, updateTestResultVisibility } from '../../api/testResults';
-import useAuthStore from '../../store/useAuthStore';
+import { deleteTestResult, updateTestResultVisibility } from '../../core/api/testResults';
+import { mbtiDescriptions } from '../../assets/data/descriptions';
+import useAuthStore from '../../core/stores/useAuthStore';
 import Button from '../common/ui/Button';
-import { mbtiDescriptions } from '../../data/descriptions';
 
 export default function TestResultItem({ result, onUpdate, onDelete }) {
   const { userId } = useAuthStore((state) => ({
@@ -29,7 +29,7 @@ export default function TestResultItem({ result, onUpdate, onDelete }) {
       onDelete(); // 부모 컴포넌트에서 결과 목록을 다시 불러오도록 요청
     } catch (error) {
       console.error('삭제 실패:', error);
-      alert('삭제 실패. 다시 시도');
+      alert('게시글 삭제 실패하였습니다. 다시 시도해 주세요!');
     }
   };
 
@@ -44,7 +44,7 @@ export default function TestResultItem({ result, onUpdate, onDelete }) {
 
       {isOwner && (
         <div className="flex justify-end space-x-4">
-          <Button onClick={handleToggleVisibility} className="px-4 py-2 text-base bg-blue-400 hover:bg-blue-300">
+          <Button onClick={handleToggleVisibility} className="px-4 py-2 text-base !bg-blue-400 hover:!bg-blue-300">
             {result.visibility ? '비공개로 전환' : '공개로 전환'}
           </Button>
           <Button onClick={handleDelete} className="px-3 py-1 ml-3 text-base">

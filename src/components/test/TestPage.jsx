@@ -1,15 +1,15 @@
-import TestForm from './TestForm';
-import useAuthStore from '../../store/useAuthStore';
-import useTestStore from '../../store/useTestStore';
-import calculateMBTI from '../../utils/calculateMBTI';
 import { useNavigate } from 'react-router-dom';
-import { createTestResult } from '../../api/testResults';
-import { mbtiDescriptions } from '../../data/descriptions';
+import useAuthStore from '../../core/stores/useAuthStore';
+import useTestStore from '../../core/stores/useTestStore';
+import calculateMBTI from '../../core/utils/calculateMBTI';
+import { createTestResult } from '../../core/api/testResults';
+import { mbtiDescriptions } from '../../assets/data/descriptions';
+import TestForm from './TestForm';
 import Article from '../common/ui/Article';
 
 export default function TestPage() {
   const navigate = useNavigate();
-  const { addResult, setCurrentResult } = useTestStore(); // 전역 상태 업데이트 함수
+  const { addResult, setCurrentResult } = useTestStore();
   const { userId, nickname } = useAuthStore((state) => ({
     userId: state.userId,
     nickname: state.nickname

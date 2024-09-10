@@ -1,4 +1,4 @@
-import { api } from '../instance/Instance';
+import { api } from '../instance/axiosInstance';
 
 // 테스트 결과 목록 가져오기
 export const getTestResults = async () => {

@@ -11,8 +11,8 @@ export default function AuthForm({ mode, onSubmit }) {
 
   const onHandleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
+    setFormData((prev) => ({
+      ...prev,
       [name]: value
     }));
   };

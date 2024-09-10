@@ -1,4 +1,4 @@
-import { auth } from '../instance/Instance';
+import { auth } from '../instance/axiosInstance';
 
 // 회원가입
 export const register = async (userData) => {

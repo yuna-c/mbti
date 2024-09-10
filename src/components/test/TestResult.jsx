@@ -1,5 +1,5 @@
-import useTestStore from '../../store/useTestStore';
 import { useNavigate } from 'react-router-dom';
+import useTestStore from '../../core/stores/useTestStore';
 
 export default function TestResult() {
   const { currentResult } = useTestStore();
