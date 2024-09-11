@@ -5,7 +5,7 @@
 
 ## 배포 링크
 
-[햅삐햅삐한 MBTI 하러가기](mbti-tau.vercel.app/)
+[햅삐햅삐한 MBTI 하러가기](https://mbti-tau.vercel.app/)
 <br/><br/>
 
 ## 제작 기간

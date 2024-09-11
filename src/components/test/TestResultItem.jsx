@@ -34,8 +34,8 @@ export default function TestResultItem({ result, onUpdate, onDelete }) {
   };
 
   return (
-    <div className="p-6 mb-4 bg-white border border-black rounded-lg shadow-md hover:shadow-lg ">
-      <div className="flex justify-between pb-3 mb-3 border-b border-black">
+    <div className="p-6 mb-4 bg-white border border-black rounded-lg shadow-md hover:shadow-lg">
+      <div className="flex flex-col justify-between pb-3 mb-3 border-b border-black sm:flex-row">
         <h4 className="text-2xl font-medium text-customPink">{result.nickname}</h4>
         <p className="text-sm text-black">{formattedDate}</p>
       </div>

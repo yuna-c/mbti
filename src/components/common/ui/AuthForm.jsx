@@ -23,7 +23,7 @@ export default function AuthForm({ mode, onSubmit }) {
   };
 
   return (
-    <form onSubmit={onHandleSubmit} className="w-full space-y-4 bg-white opacity-80">
+    <form onSubmit={onHandleSubmit} className="w-full space-y-4">
       {mode === 'signup' && (
         <Input
           type="text"
