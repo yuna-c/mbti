@@ -6,7 +6,7 @@ import Article from '../common/ui/Article';
 import Button from '../common/ui/Button';
 
 export default function Home() {
-  const accessToken = useAuthStore((state) => state.accessToken);
+  const accessToken = useAuthStore();
 
   return (
     <Article className="space-y-4 Home">
