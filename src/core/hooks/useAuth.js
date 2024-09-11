@@ -26,7 +26,7 @@ export const useSignUp = () => {
 // 로그인
 export const useLogin = () => {
   const queryClient = useQueryClient();
-  const setAuth = useAuthStore((state) => state.setAuth);
+  const { setAuth } = useAuthStore();
 
   const mutation = useMutation({
     mutationFn: login,
@@ -47,12 +47,7 @@ export const useLogin = () => {
 
 // 로그아웃
 export const useLogout = () => {
-  const { accessToken, clearAuth, nickname } = useAuthStore((state) => ({
-    accessToken: state.accessToken,
-    clearAuth: state.clearAuth,
-    nickname: state.nickname
-  }));
-
+  const { accessToken, clearAuth, nickname } = useAuthStore();
   return { accessToken, nickname, clearAuth };
 };
 
@@ -66,7 +61,7 @@ export const useProfile = () => {
 
   const mutation = useMutation({
     mutationFn: (newNickname) => updateProfile(token, { nickname: newNickname }),
-    onSuccess: (data, newNickname) => {
+    onSuccess: (_, newNickname) => {
       setNicknameInStore(newNickname); // newNickname을 store에 저장
       queryClient.invalidateQueries(); // 캐시된 쿼리 무효화
     },
