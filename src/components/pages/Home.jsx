@@ -14,7 +14,7 @@ export default function Home() {
 
       <p>자신의 성격 유형을 확인할 수 있도록 솔직하게 답변해 주세요.</p>
 
-      <div className="flex gap-4 py-4 text">
+      <div className="flex flex-col gap-4 py-4 md:flex-row text">
         {mainText.map((data, index) => {
           return <TextBox data={data} key={data.id} />;
         })}

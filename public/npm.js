@@ -24,3 +24,5 @@
 
 // yarn add @tanstack/react-query@latest
 // yarn add react@latest react-dom@latest
+
+// yarn add react-icons

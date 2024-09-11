@@ -1,10 +1,13 @@
 import { useNavigate } from 'react-router-dom';
 import { useLogout } from '../../core/hooks/useAuth';
+import { HiMenu, HiX } from 'react-icons/hi';
+import { useState } from 'react';
 import Button from './ui/Button';
 import NavLink from './ui/NavLink';
 
 export default function Nav() {
   const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
   const { accessToken, nickname, clearAuth } = useLogout();
 
   const onHandleLogout = () => {
@@ -12,12 +15,26 @@ export default function Nav() {
     navigate('/');
   };
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav aria-label="Global" className="relative z-10 flex items-center justify-between mx-auto px-14 Nav">
+    <nav aria-label="Global" className="relative z-10 flex items-center justify-between mx-auto md:px-14 Nav">
       <div className="flex items-center Logo">
         <NavLink to="/" label="홈" />
       </div>
-      <ul className="flex items-center justify-between">
+
+      <button onClick={toggleMenu} className="text-3xl md:hidden focus:outline-none" aria-label="Toggle menu">
+        {isOpen ? <HiX /> : <HiMenu />}
+      </button>
+
+      {/* <ul className="flex items-center justify-between"> */}
+      <ul
+        className={`${
+          isOpen ? 'block' : 'hidden'
+        } md:flex items-center justify-between absolute top-14 left-0 right-0 w-full rounded-md border border-black md:space-y-0 space-y-4 md:border-0 md:w-auto md:static md:p-0 p-3 bg-white md:bg-transparent transition-all duration-300 ease-in-out`}
+      >
         {accessToken ? (
           <>
             <li className="mx-3">

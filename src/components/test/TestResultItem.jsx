@@ -47,7 +47,7 @@ export default function TestResultItem({ result, onUpdate, onDelete }) {
         <div className="flex justify-end space-x-4">
           <Button
             onClick={handleToggleVisibility}
-            className="px-4 py-2 text-lg !bg-customBlue hover:!bg-customBlue-light focus:ring-2 focus:ring-customBlue-light !focus-visible:bg-customBlue-dark "
+            className="px-4 py-2 text-white rounded-md !bg-customBlue hover:!bg-customBlue-light focus:!ring-customBlue-light  focus-visible:!outline-2 !focus-visible:outline-offset-2 focus-visible:!bg-customBlue-dark"
           >
             {result.visibility ? '비공개로 전환' : '공개로 전환'}
           </Button>
