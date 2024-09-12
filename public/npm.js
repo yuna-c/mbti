@@ -26,6 +26,3 @@
 // yarn add react@latest react-dom@latest
 
 // yarn add react-icons
-
-// 새로고침 404
-// yarn add connect-history-api-fallback --save-dev
