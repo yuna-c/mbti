@@ -1,5 +1,5 @@
 import { deleteTestResult, updateTestResultVisibility } from '../../core/api/testResults';
-import { mbtiDescriptions } from '../../assets/data/descriptions';
+import { mbtiDescriptions } from '../../core/constant/descriptions';
 import useAuthStore from '../../core/stores/useAuthStore';
 import Button from '../common/ui/Button';
 

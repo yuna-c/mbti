@@ -1,4 +1,4 @@
-import { questions } from '../../assets/data/questions';
+import { questions } from '../../core/constant/questions';
 
 export default function calculateMBTI(answers) {
   const scores = {

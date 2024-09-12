@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { questions } from '../../assets/data/questions';
+import { questions } from '../../core/constant/questions';
 import Button from '../common/ui/Button';
 
 export default function TestForm({ onSubmit }) {

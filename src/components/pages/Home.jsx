@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { mainText } from './../../assets/data/maintext';
+import { mainText } from './../../core/constant/maintext';
 import TextBox from '../common/ui/TextBox';
 import useAuthStore from '../../core/stores/useAuthStore';
 import Article from '../common/ui/Article';

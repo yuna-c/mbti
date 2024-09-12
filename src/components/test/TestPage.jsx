@@ -3,7 +3,7 @@ import useAuthStore from '../../core/stores/useAuthStore';
 import useTestStore from '../../core/stores/useTestStore';
 import calculateMBTI from '../../core/utils/calculateMBTI';
 import { createTestResult } from '../../core/api/testResults';
-import { mbtiDescriptions } from '../../assets/data/descriptions';
+import { mbtiDescriptions } from '../../core/constant/descriptions';
 import TestForm from './TestForm';
 import Article from '../common/ui/Article';
 

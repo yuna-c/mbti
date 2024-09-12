@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import useTestStore from '../../core/stores/useTestStore';
 import Button from '../common/ui/Button';
 import Article from '../common/ui/Article';
-import { randomImages } from '../../assets/data/images';
+import { randomImages } from '../../core/constant/images';
 
 export default function TestResult() {
   const { currentResult } = useTestStore();
