@@ -12,9 +12,9 @@ export default function AuthForm({ mode, onSubmit }) {
 
   const onHandleChange = useChange(setFormData);
 
-  const onHandleSubmit = async (e) => {
+  const onHandleSubmit = (e) => {
     e.preventDefault();
-    if (onSubmit) await onSubmit(formData);
+    if (onSubmit) onSubmit(formData);
   };
 
   return (
