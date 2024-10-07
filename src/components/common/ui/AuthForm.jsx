@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Button from './Button';
 import Input from './Input';
+import { useChange } from '../../../core/hooks/useChange';
 
 export default function AuthForm({ mode, onSubmit }) {
   const [formData, setFormData] = useState({
@@ -9,13 +10,7 @@ export default function AuthForm({ mode, onSubmit }) {
     nickname: ''
   });
 
-  const onHandleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value
-    }));
-  };
+  const onHandleChange = useChange(setFormData);
 
   const onHandleSubmit = async (e) => {
     e.preventDefault();
